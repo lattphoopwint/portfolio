@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latt Phoo Pwint | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio website for Latt Phoo Pwint, Support Engineer at DataSunrise Inc."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero container">
+      <div class="hero__content">
+        <p class="eyebrow" id="current-role"></p>
+        <h1 id="name"></h1>
+        <p class="hero__summary" id="headline"></p>
+        <div class="hero__meta">
+          <p id="location-current"></p>
+          <p id="location-origin"></p>
+        </div>
+        <div class="hero__actions">
+          <a class="button" id="email-link" href="#">Email</a>
+          <a
+            class="button button--secondary"
+            id="linkedin-link"
+            href="#"
+            target="_blank"
+            rel="noreferrer"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+      <div class="hero__photo-wrapper">
+        <img
+          class="hero__photo"
+          id="profile-photo"
+          src="https://picsum.photos/640/640?grayscale"
+          alt="Profile placeholder"
+        />
+      </div>
+    </header>
+
+    <main class="container stack">
+      <section class="card" id="about">
+        <h2>About</h2>
+        <p id="about-text"></p>
+      </section>
+
+      <section class="card card--tinted" id="career-goal">
+        <h2>Career Goal</h2>
+        <p id="career-goal-text"></p>
+      </section>
+
+      <section class="card" id="experience">
+        <h2>Experience</h2>
+        <div class="timeline" id="experience-list"></div>
+      </section>
+
+      <section class="card" id="education">
+        <h2>Education</h2>
+        <div class="timeline" id="education-list"></div>
+      </section>
+
+      <section class="grid-two">
+        <article class="card">
+          <h2>Volunteer</h2>
+          <div class="timeline" id="volunteer-list"></div>
+        </article>
+
+        <article class="card">
+          <h2>Languages</h2>
+          <ul class="language-list" id="language-list"></ul>
+        </article>
+      </section>
+    </main>
+
+    <footer class="container footer">
+      <p>© <span id="year"></span> <span id="footer-name"></span>. All rights reserved.</p>
+    </footer>
+
+    <script src="data/profile.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
